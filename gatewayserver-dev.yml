@@ -20,7 +20,7 @@ spring:
           uri: lb://customerservice
         routes[1]:
           id: discoveryserver
-          predicates[1]: Path=/eureka/web
+          predicates[0]: Path=/eureka/web
           filters[0]: SetPath=/
           uri: http://localhost:8888
 
